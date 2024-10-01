@@ -1,0 +1,24 @@
+{%extends "base.html"%}
+
+{% block title%}
+<title> Note app | Home</title>
+{%endblock%}
+
+{% block content%}
+<article>
+  <header>
+      <h1>MY NOTES</h1>
+      <p>Note app allows you to save all notes online</p>
+      </header>
+  <section>
+    <u1>
+    {% for note in notes %}
+       <li><a href = "{{url_for('view', id = note.id)}}">{{note.title}}</a></li>
+    {% endfor %}
+    </u1>
+  </section>
+  
+</article>
+
+{%endblock%}
+

@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+
+{% block title%}
+<title> Note app | Index</title>
+{%endblock%}
+
+{% block content%}
+<article>
+  <p>The note app features a simple sign-in/sign-out functionality, where users can log in with their email and password or create a new account if needed. Once signed in, the home page displays a list of the user's notes, each shown as a clickable card or list item with the note's title (or a snippet of the content) and the date of the last update. Users can click on any note to view its full content on a separate page. Additionally, there's a "New Note" button that allows users to create a new note, which can be saved and added to the list on the home page. The app also includes a sign-out option that redirects users back to the sign-in page.</p>
+</article>
+
+{%endblock%}
+{% block aside%}
+    <h3>My Notes</h3>
+    <p>You need to login to view notes</p>
+{% endblock%}
+               
+            
